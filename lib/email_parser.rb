@@ -11,6 +11,7 @@ class EmailParser
   def parse
     @@all.split(" ")
     @@all.uniq
+    @@all
   end
 
 
