@@ -11,8 +11,8 @@ class EmailAddressParser
   end
   def parse
     @emailset = @@all
-    @emailset.uniq
-    @emailset
+    @finalset = @emailset.uniq
+    @finalset
   end
 
 
