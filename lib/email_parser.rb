@@ -7,6 +7,7 @@ class EmailAddressParser
   attr_accessor :email
   def initialize(list)
     @@all = list.split(/[\s,]/)
+    @@all = @@all.reject { |c| c.empty? }
   end
   def parse
     @emailset = @@all
