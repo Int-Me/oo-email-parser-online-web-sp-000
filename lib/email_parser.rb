@@ -9,7 +9,7 @@ class EmailAddressParser
     @@all << list
   end
   def parse
-    @emailset = @@all.split(" ")
+    @emailset = @@all
     @emailset.uniq
     @emailset
   end
