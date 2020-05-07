@@ -6,7 +6,7 @@ class EmailAddressParser
   @@all = []
   attr_accessor :email
   def initialize(list)
-    @@all << list.split(" ")
+    @@all = list.split(" ")
   end
   def parse
     @emailset = @@all
