@@ -9,9 +9,9 @@ class EmailParser
     @@all << list
   end
   def parse
-    @@all.split(" ")
-    @@all.uniq
-    @@all
+    @emailset = @@all.split(" ")
+    @emailset.uniq
+    @emailset
   end
 
 
